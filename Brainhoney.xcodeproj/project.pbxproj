@@ -353,6 +353,7 @@
 		816150AB17FB5389000897B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/Supporting Files/Brainhoney-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Classes/Supporting Files/Brainhoney-Info.plist";
@@ -364,6 +365,7 @@
 		816150AC17FB5389000897B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/Supporting Files/Brainhoney-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Classes/Supporting Files/Brainhoney-Info.plist";
