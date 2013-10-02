@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8113203217FCB29E0044B95F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8113203117FC867E0044B95F /* Settings.bundle */; };
 		8161508B17FB5389000897B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8161508A17FB5389000897B9 /* UIKit.framework */; };
 		8161508D17FB5389000897B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8161508C17FB5389000897B9 /* Foundation.framework */; };
 		8161508F17FB5389000897B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8161508E17FB5389000897B9 /* CoreGraphics.framework */; };
@@ -240,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81D380C117FBC72E008B6729 /* MainStoryboard.storyboard in Resources */,
+				8113203217FCB29E0044B95F /* Settings.bundle in Resources */,
 				81D380C217FBC72E008B6729 /* Default-568h@2x.png in Resources */,
 				81D380C317FBC72E008B6729 /* Default.png in Resources */,
 				81D380C417FBC72E008B6729 /* Default@2x.png in Resources */,

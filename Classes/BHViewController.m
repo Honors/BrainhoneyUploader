@@ -45,6 +45,11 @@
     uploader.delegate = self;
     [uploader uploadForStudent:currentCookie inClass:currentClass forItem:currentItem];
 }
+- (IBAction)goHome {
+    id devswitch = [[NSUserDefaults standardUserDefaults] valueForKey:@"devswitch"];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:[devswitch intValue] ? @"https://bwhst.brainhoney.com" : @"https://bwhs.brainhoney.com"]];
+    [web loadRequest:request];
+}
 - (NSDictionary *)parseQuery: (NSString *)filename {
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithCapacity:255];
     NSArray *vars = [[filename componentsSeparatedByString:@"?"].lastObject componentsSeparatedByString:@"&"];
@@ -74,7 +79,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     foundAssn = NO;
     
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://bwhst.brainhoney.com"]];
+    id devswitch = [[NSUserDefaults standardUserDefaults] valueForKey:@"devswitch"];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:[devswitch intValue] ? @"https://bwhst.brainhoney.com" : @"https://bwhs.brainhoney.com"]];
     web.delegate = self;
     [web loadRequest:request];
     
