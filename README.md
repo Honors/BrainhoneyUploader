@@ -1,4 +1,8 @@
-# Brainhoney Uploader
+<div style="background: black; width: 100%">
+  <img src="Information/homescreen.png">
+  <h1 style="color: white; float: right; margin-right: 30px; font-size: 30px">Brainhoney Uploader</h1>
+</div>
+
 This app is meant to allow iPad users to upload assignments to Brainhoney. It
 achieves this by two primary innovations:
 
