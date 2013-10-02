@@ -10,8 +10,6 @@ achieves this by two primary innovations:
 2. A web browser is used to render the Brainhoney website and observe assignment
    browsing. Once the user settles on an assignment, their choice, too, is cached.
 
-![Brainhoney](Information/screen.png)
-
 # Implementation
 Within the `Information` folder are a couple shell scripts meant to illustrate
 the specifics of the uploading endpoint. The file `upload.sh` serves as a concise
@@ -22,6 +20,8 @@ of the shell script.
 The user interface includes a status bar to guide the user in the process of
 uploading a file. This is a unique design paradigm. Additionally, the idea of
 importing a file and caching it for later use is novel.
+
+![Brainhoney](Information/screen.png)
 
 # Inspiration
 This app was designed and developed as a part of an Independent Study course at
