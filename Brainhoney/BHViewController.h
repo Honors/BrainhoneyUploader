@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BHFileUpload.h"
 
-@interface BHViewController : UIViewController
-
+@interface BHViewController : UIViewController <UIWebViewDelegate, BHFileUploadDelegate> {
+    IBOutlet UITextField *username;
+    IBOutlet UITextField *password;
+    
+    IBOutlet UIWebView *web;
+    IBOutlet UIButton *submitButton;
+    
+    IBOutlet UITextView *statusBar;
+    IBOutlet UILabel *fileStatus;
+}
+- (IBAction)fill;
+- (IBAction)submitFile;
+- (void)renderFile;
 @end
