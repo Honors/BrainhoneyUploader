@@ -27,15 +27,9 @@
 		816150D517FB555F000897B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816150D417FB555F000897B9 /* SystemConfiguration.framework */; };
 		81D380BD17FBC252008B6729 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D380BC17FBC1E3008B6729 /* main.m */; };
 		81D380C017FBC2F7008B6729 /* BHFileUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D380BF17FBC2E7008B6729 /* BHFileUpload.m */; };
-		81D380C117FBC72E008B6729 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D380BA17FBC1E3008B6729 /* MainStoryboard.storyboard */; };
-		81D380C217FBC72E008B6729 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D380B417FBC1E3008B6729 /* Default-568h@2x.png */; };
-		81D380C317FBC72E008B6729 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D380B517FBC1E3008B6729 /* Default.png */; };
-		81D380C417FBC72E008B6729 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D380B617FBC1E3008B6729 /* Default@2x.png */; };
-		81D380C817FBCD15008B6729 /* upload_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D380C717FBCD15008B6729 /* upload_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8113203117FC867E0044B95F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = "Supporting Files/Settings.bundle"; sourceTree = "<group>"; };
 		8161508717FB5389000897B9 /* Brainhoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainhoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8161508A17FB5389000897B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8161508C17FB5389000897B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,7 +71,6 @@
 		81D380BC17FBC1E3008B6729 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
 		81D380BE17FBC2E7008B6729 /* BHFileUpload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHFileUpload.h; sourceTree = "<group>"; };
 		81D380BF17FBC2E7008B6729 /* BHFileUpload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHFileUpload.m; sourceTree = "<group>"; };
-		81D380C717FBCD15008B6729 /* upload_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = upload_icon.png; path = "Supporting Files/upload_icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +94,7 @@
 		8161507E17FB5388000897B9 = {
 			isa = PBXGroup;
 			children = (
-				8161509017FB5389000897B9 /* Classes */,
+				8161509017FB5389000897B9 /* Brainhoney */,
 				8161508917FB5389000897B9 /* Frameworks */,
 				8161508817FB5389000897B9 /* Products */,
 			);
@@ -129,7 +122,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8161509017FB5389000897B9 /* Classes */ = {
+		8161509017FB5389000897B9 /* Brainhoney */ = {
 			isa = PBXGroup;
 			children = (
 				816150AD17FB53D2000897B9 /* AFNetworking */,
@@ -142,14 +135,12 @@
 				81D380BF17FBC2E7008B6729 /* BHFileUpload.m */,
 				8161509117FB5389000897B9 /* Supporting Files */,
 			);
-			path = Classes;
+			path = Brainhoney;
 			sourceTree = "<group>";
 		};
 		8161509117FB5389000897B9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8113203117FC867E0044B95F /* Settings.bundle */,
-				81D380C717FBCD15008B6729 /* upload_icon.png */,
 				81D380B217FBC1E3008B6729 /* Brainhoney-Info.plist */,
 				81D380B817FBC1E3008B6729 /* InfoPlist.strings */,
 				81D380BC17FBC1E3008B6729 /* main.m */,
@@ -239,11 +230,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81D380C117FBC72E008B6729 /* MainStoryboard.storyboard in Resources */,
-				81D380C217FBC72E008B6729 /* Default-568h@2x.png in Resources */,
-				81D380C317FBC72E008B6729 /* Default.png in Resources */,
-				81D380C417FBC72E008B6729 /* Default@2x.png in Resources */,
-				81D380C817FBCD15008B6729 /* upload_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,10 +341,9 @@
 		816150AB17FB5389000897B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Classes/Supporting Files/Brainhoney-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Classes/Supporting Files/Brainhoney-Info.plist";
+				GCC_PREFIX_HEADER = "Brainhoney/Supporting Files/Brainhoney-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Brainhoney/Supporting Files/Brainhoney-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -367,10 +352,9 @@
 		816150AC17FB5389000897B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Classes/Supporting Files/Brainhoney-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Classes/Supporting Files/Brainhoney-Info.plist";
+				GCC_PREFIX_HEADER = "Brainhoney/Supporting Files/Brainhoney-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Brainhoney/Supporting Files/Brainhoney-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
