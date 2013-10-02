@@ -25,8 +25,8 @@
 		816150D117FB554F000897B9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816150D017FB554F000897B9 /* CoreLocation.framework */; };
 		816150D317FB5555000897B9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816150D217FB5555000897B9 /* MobileCoreServices.framework */; };
 		816150D517FB555F000897B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816150D417FB555F000897B9 /* SystemConfiguration.framework */; };
-		816150D817FB8F55000897B9 /* BHFileUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 816150D717FB8F54000897B9 /* BHFileUpload.m */; };
 		81D380BD17FBC252008B6729 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D380BC17FBC1E3008B6729 /* main.m */; };
+		81D380C017FBC2F7008B6729 /* BHFileUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D380BF17FBC2E7008B6729 /* BHFileUpload.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,8 +61,6 @@
 		816150D017FB554F000897B9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		816150D217FB5555000897B9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		816150D417FB555F000897B9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		816150D617FB8F54000897B9 /* BHFileUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHFileUpload.h; path = ../BHFileUpload.h; sourceTree = "<group>"; };
-		816150D717FB8F54000897B9 /* BHFileUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHFileUpload.m; path = ../BHFileUpload.m; sourceTree = "<group>"; };
 		81D380B217FBC1E3008B6729 /* Brainhoney-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Brainhoney-Info.plist"; path = "Supporting Files/Brainhoney-Info.plist"; sourceTree = "<group>"; };
 		81D380B317FBC1E3008B6729 /* Brainhoney-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Brainhoney-Prefix.pch"; path = "Supporting Files/Brainhoney-Prefix.pch"; sourceTree = "<group>"; };
 		81D380B417FBC1E3008B6729 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Supporting Files/Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -71,6 +69,8 @@
 		81D380B917FBC1E3008B6729 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		81D380BB17FBC1E3008B6729 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		81D380BC17FBC1E3008B6729 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
+		81D380BE17FBC2E7008B6729 /* BHFileUpload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHFileUpload.h; sourceTree = "<group>"; };
+		81D380BF17FBC2E7008B6729 /* BHFileUpload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHFileUpload.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +131,8 @@
 				81D380BA17FBC1E3008B6729 /* MainStoryboard.storyboard */,
 				816150A517FB5389000897B9 /* BHViewController.h */,
 				816150A617FB5389000897B9 /* BHViewController.m */,
-				816150D617FB8F54000897B9 /* BHFileUpload.h */,
-				816150D717FB8F54000897B9 /* BHFileUpload.m */,
+				81D380BE17FBC2E7008B6729 /* BHFileUpload.h */,
+				81D380BF17FBC2E7008B6729 /* BHFileUpload.m */,
 				8161509117FB5389000897B9 /* Supporting Files */,
 			);
 			path = Brainhoney;
@@ -240,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D380C017FBC2F7008B6729 /* BHFileUpload.m in Sources */,
 				81D380BD17FBC252008B6729 /* main.m in Sources */,
 				8161509B17FB5389000897B9 /* BHAppDelegate.m in Sources */,
 				816150A717FB5389000897B9 /* BHViewController.m in Sources */,
@@ -252,7 +253,6 @@
 				816150C717FB53D2000897B9 /* AFURLRequestSerialization.m in Sources */,
 				816150C817FB53D2000897B9 /* AFURLResponseSerialization.m in Sources */,
 				816150C917FB53D2000897B9 /* AFURLSessionManager.m in Sources */,
-				816150D817FB8F55000897B9 /* BHFileUpload.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
