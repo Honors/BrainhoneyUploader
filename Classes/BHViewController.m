@@ -22,8 +22,10 @@
 - (void)renderFile {
     NSString *file = [[NSUserDefaults standardUserDefaults] valueForKey:@"file_url"];
     if( file != nil ) {
-        NSLog(@"rendering %@", file);
+        statusBar.text = @"The file to the left has been cached. Navigate to an assignment then press \"Submit File\" to upload.";
         fileStatus.text = file.lastPathComponent;
+    } else {
+        statusBar.text = @"In order to upload a file, press \"Open with Brainhoney\" from another app, usually through an export button.";
     }
 }
 - (void)uploadSucceeded:(BOOL)success {

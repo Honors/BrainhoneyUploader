@@ -34,7 +34,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="In order to upload a file, press &quot;Open with Brainhoney&quot; from another app then &quot;Submit File&quot; (right) from an assignment view." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zBl-Fe-vdH">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zBl-Fe-vdH">
                                         <rect key="frame" x="186" y="14" width="346" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="Fxf-EP-LMS"/>
