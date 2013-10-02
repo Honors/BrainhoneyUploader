@@ -94,7 +94,7 @@
 		8161507E17FB5388000897B9 = {
 			isa = PBXGroup;
 			children = (
-				8161509017FB5389000897B9 /* Brainhoney */,
+				8161509017FB5389000897B9 /* Classes */,
 				8161508917FB5389000897B9 /* Frameworks */,
 				8161508817FB5389000897B9 /* Products */,
 			);
@@ -122,7 +122,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8161509017FB5389000897B9 /* Brainhoney */ = {
+		8161509017FB5389000897B9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				816150AD17FB53D2000897B9 /* AFNetworking */,
@@ -342,8 +342,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Brainhoney/Supporting Files/Brainhoney-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Brainhoney/Supporting Files/Brainhoney-Info.plist";
+				GCC_PREFIX_HEADER = "Classes/Supporting Files/Brainhoney-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Classes/Supporting Files/Brainhoney-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -353,8 +353,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Brainhoney/Supporting Files/Brainhoney-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Brainhoney/Supporting Files/Brainhoney-Info.plist";
+				GCC_PREFIX_HEADER = "Classes/Supporting Files/Brainhoney-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Classes/Supporting Files/Brainhoney-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
