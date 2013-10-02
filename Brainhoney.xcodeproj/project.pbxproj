@@ -135,7 +135,7 @@
 				81D380BF17FBC2E7008B6729 /* BHFileUpload.m */,
 				8161509117FB5389000897B9 /* Supporting Files */,
 			);
-			path = Brainhoney;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		8161509117FB5389000897B9 /* Supporting Files */ = {
