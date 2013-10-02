@@ -10,13 +10,7 @@
 		8161508B17FB5389000897B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8161508A17FB5389000897B9 /* UIKit.framework */; };
 		8161508D17FB5389000897B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8161508C17FB5389000897B9 /* Foundation.framework */; };
 		8161508F17FB5389000897B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8161508E17FB5389000897B9 /* CoreGraphics.framework */; };
-		8161509517FB5389000897B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8161509317FB5389000897B9 /* InfoPlist.strings */; };
-		8161509717FB5389000897B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8161509617FB5389000897B9 /* main.m */; };
 		8161509B17FB5389000897B9 /* BHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8161509A17FB5389000897B9 /* BHAppDelegate.m */; };
-		8161509D17FB5389000897B9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8161509C17FB5389000897B9 /* Default.png */; };
-		8161509F17FB5389000897B9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8161509E17FB5389000897B9 /* Default@2x.png */; };
-		816150A117FB5389000897B9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 816150A017FB5389000897B9 /* Default-568h@2x.png */; };
-		816150A417FB5389000897B9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816150A217FB5389000897B9 /* MainStoryboard.storyboard */; };
 		816150A717FB5389000897B9 /* BHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816150A617FB5389000897B9 /* BHViewController.m */; };
 		816150C117FB53D2000897B9 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 816150AF17FB53D2000897B9 /* AFHTTPRequestOperation.m */; };
 		816150C217FB53D2000897B9 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 816150B117FB53D2000897B9 /* AFHTTPRequestOperationManager.m */; };
@@ -27,12 +21,12 @@
 		816150C717FB53D2000897B9 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 816150BC17FB53D2000897B9 /* AFURLRequestSerialization.m */; };
 		816150C817FB53D2000897B9 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 816150BE17FB53D2000897B9 /* AFURLResponseSerialization.m */; };
 		816150C917FB53D2000897B9 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 816150C017FB53D2000897B9 /* AFURLSessionManager.m */; };
-		816150CB17FB54E0000897B9 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 816150CA17FB54E0000897B9 /* test.txt */; };
 		816150CF17FB5547000897B9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816150CE17FB5547000897B9 /* Security.framework */; };
 		816150D117FB554F000897B9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816150D017FB554F000897B9 /* CoreLocation.framework */; };
 		816150D317FB5555000897B9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816150D217FB5555000897B9 /* MobileCoreServices.framework */; };
 		816150D517FB555F000897B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816150D417FB555F000897B9 /* SystemConfiguration.framework */; };
 		816150D817FB8F55000897B9 /* BHFileUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 816150D717FB8F54000897B9 /* BHFileUpload.m */; };
+		81D380BD17FBC252008B6729 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D380BC17FBC1E3008B6729 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,16 +34,8 @@
 		8161508A17FB5389000897B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8161508C17FB5389000897B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8161508E17FB5389000897B9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8161509217FB5389000897B9 /* Brainhoney-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Brainhoney-Info.plist"; sourceTree = "<group>"; };
-		8161509417FB5389000897B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8161509617FB5389000897B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8161509817FB5389000897B9 /* Brainhoney-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Brainhoney-Prefix.pch"; sourceTree = "<group>"; };
 		8161509917FB5389000897B9 /* BHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHAppDelegate.h; sourceTree = "<group>"; };
 		8161509A17FB5389000897B9 /* BHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHAppDelegate.m; sourceTree = "<group>"; };
-		8161509C17FB5389000897B9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		8161509E17FB5389000897B9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		816150A017FB5389000897B9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		816150A317FB5389000897B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		816150A517FB5389000897B9 /* BHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHViewController.h; sourceTree = "<group>"; };
 		816150A617FB5389000897B9 /* BHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHViewController.m; sourceTree = "<group>"; };
 		816150AE17FB53D2000897B9 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -71,13 +57,20 @@
 		816150BE17FB53D2000897B9 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		816150BF17FB53D2000897B9 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		816150C017FB53D2000897B9 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		816150CA17FB54E0000897B9 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		816150CE17FB5547000897B9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		816150D017FB554F000897B9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		816150D217FB5555000897B9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		816150D417FB555F000897B9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		816150D617FB8F54000897B9 /* BHFileUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHFileUpload.h; path = ../BHFileUpload.h; sourceTree = "<group>"; };
 		816150D717FB8F54000897B9 /* BHFileUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHFileUpload.m; path = ../BHFileUpload.m; sourceTree = "<group>"; };
+		81D380B217FBC1E3008B6729 /* Brainhoney-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Brainhoney-Info.plist"; path = "Supporting Files/Brainhoney-Info.plist"; sourceTree = "<group>"; };
+		81D380B317FBC1E3008B6729 /* Brainhoney-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Brainhoney-Prefix.pch"; path = "Supporting Files/Brainhoney-Prefix.pch"; sourceTree = "<group>"; };
+		81D380B417FBC1E3008B6729 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Supporting Files/Default-568h@2x.png"; sourceTree = "<group>"; };
+		81D380B517FBC1E3008B6729 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Supporting Files/Default.png"; sourceTree = "<group>"; };
+		81D380B617FBC1E3008B6729 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Supporting Files/Default@2x.png"; sourceTree = "<group>"; };
+		81D380B917FBC1E3008B6729 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		81D380BB17FBC1E3008B6729 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		81D380BC17FBC1E3008B6729 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,12 +128,11 @@
 				816150AD17FB53D2000897B9 /* AFNetworking */,
 				8161509917FB5389000897B9 /* BHAppDelegate.h */,
 				8161509A17FB5389000897B9 /* BHAppDelegate.m */,
-				816150A217FB5389000897B9 /* MainStoryboard.storyboard */,
+				81D380BA17FBC1E3008B6729 /* MainStoryboard.storyboard */,
 				816150A517FB5389000897B9 /* BHViewController.h */,
 				816150A617FB5389000897B9 /* BHViewController.m */,
 				816150D617FB8F54000897B9 /* BHFileUpload.h */,
 				816150D717FB8F54000897B9 /* BHFileUpload.m */,
-				816150CA17FB54E0000897B9 /* test.txt */,
 				8161509117FB5389000897B9 /* Supporting Files */,
 			);
 			path = Brainhoney;
@@ -149,13 +141,13 @@
 		8161509117FB5389000897B9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8161509217FB5389000897B9 /* Brainhoney-Info.plist */,
-				8161509317FB5389000897B9 /* InfoPlist.strings */,
-				8161509617FB5389000897B9 /* main.m */,
-				8161509817FB5389000897B9 /* Brainhoney-Prefix.pch */,
-				8161509C17FB5389000897B9 /* Default.png */,
-				8161509E17FB5389000897B9 /* Default@2x.png */,
-				816150A017FB5389000897B9 /* Default-568h@2x.png */,
+				81D380B217FBC1E3008B6729 /* Brainhoney-Info.plist */,
+				81D380B817FBC1E3008B6729 /* InfoPlist.strings */,
+				81D380BC17FBC1E3008B6729 /* main.m */,
+				81D380B317FBC1E3008B6729 /* Brainhoney-Prefix.pch */,
+				81D380B417FBC1E3008B6729 /* Default-568h@2x.png */,
+				81D380B517FBC1E3008B6729 /* Default.png */,
+				81D380B617FBC1E3008B6729 /* Default@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -238,12 +230,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8161509517FB5389000897B9 /* InfoPlist.strings in Resources */,
-				8161509D17FB5389000897B9 /* Default.png in Resources */,
-				8161509F17FB5389000897B9 /* Default@2x.png in Resources */,
-				816150A117FB5389000897B9 /* Default-568h@2x.png in Resources */,
-				816150A417FB5389000897B9 /* MainStoryboard.storyboard in Resources */,
-				816150CB17FB54E0000897B9 /* test.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8161509717FB5389000897B9 /* main.m in Sources */,
+				81D380BD17FBC252008B6729 /* main.m in Sources */,
 				8161509B17FB5389000897B9 /* BHAppDelegate.m in Sources */,
 				816150A717FB5389000897B9 /* BHViewController.m in Sources */,
 				816150C117FB53D2000897B9 /* AFHTTPRequestOperation.m in Sources */,
@@ -273,20 +259,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8161509317FB5389000897B9 /* InfoPlist.strings */ = {
+		81D380B817FBC1E3008B6729 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8161509417FB5389000897B9 /* en */,
+				81D380B917FBC1E3008B6729 /* en */,
 			);
 			name = InfoPlist.strings;
+			path = "Supporting Files/en.lproj";
 			sourceTree = "<group>";
 		};
-		816150A217FB5389000897B9 /* MainStoryboard.storyboard */ = {
+		81D380BA17FBC1E3008B6729 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				816150A317FB5389000897B9 /* en */,
+				81D380BB17FBC1E3008B6729 /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			path = "Supporting Files/en.lproj";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -354,8 +342,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Brainhoney/Brainhoney-Prefix.pch";
-				INFOPLIST_FILE = "Brainhoney/Brainhoney-Info.plist";
+				GCC_PREFIX_HEADER = "Brainhoney/Supporting Files/Brainhoney-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Brainhoney/Supporting Files/Brainhoney-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -365,8 +353,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Brainhoney/Brainhoney-Prefix.pch";
-				INFOPLIST_FILE = "Brainhoney/Brainhoney-Info.plist";
+				GCC_PREFIX_HEADER = "Brainhoney/Supporting Files/Brainhoney-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Brainhoney/Supporting Files/Brainhoney-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
