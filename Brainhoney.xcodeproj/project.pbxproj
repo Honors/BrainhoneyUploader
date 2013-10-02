@@ -27,6 +27,10 @@
 		816150D517FB555F000897B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816150D417FB555F000897B9 /* SystemConfiguration.framework */; };
 		81D380BD17FBC252008B6729 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D380BC17FBC1E3008B6729 /* main.m */; };
 		81D380C017FBC2F7008B6729 /* BHFileUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D380BF17FBC2E7008B6729 /* BHFileUpload.m */; };
+		81D380C117FBC72E008B6729 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D380BA17FBC1E3008B6729 /* MainStoryboard.storyboard */; };
+		81D380C217FBC72E008B6729 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D380B417FBC1E3008B6729 /* Default-568h@2x.png */; };
+		81D380C317FBC72E008B6729 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D380B517FBC1E3008B6729 /* Default.png */; };
+		81D380C417FBC72E008B6729 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D380B617FBC1E3008B6729 /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -230,6 +234,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D380C117FBC72E008B6729 /* MainStoryboard.storyboard in Resources */,
+				81D380C217FBC72E008B6729 /* Default-568h@2x.png in Resources */,
+				81D380C317FBC72E008B6729 /* Default.png in Resources */,
+				81D380C417FBC72E008B6729 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
