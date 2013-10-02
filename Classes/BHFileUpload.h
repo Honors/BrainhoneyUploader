@@ -15,4 +15,5 @@
 @interface BHFileUpload : NSObject
 - (void)uploadForStudent: (NSString *)cookie inClass: (NSString *)enrollment forItem: (NSString *)itemid;
 @property id<BHFileUploadDelegate> delegate;
+@property (nonatomic) NSString *endpoint;
 @end
