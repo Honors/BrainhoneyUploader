@@ -11,13 +11,7 @@
 
 @implementation BHAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
-    return YES;
-}
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    NSLog(@"setting default...");
     [[NSUserDefaults standardUserDefaults] setValue:url.path forKey:@"file_url"];
     [(BHViewController *)self.window.rootViewController renderFile];
     return YES;
