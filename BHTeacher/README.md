@@ -17,3 +17,7 @@ processes are separated out, simplifying our job.
 In the first version, which does not work with the new cookie restrictions of
 iOS 7, a web browser is used to capture the cookie of the authenticated user,
 and a cached file is then uploaded for later access.
+
+## Todo
+- Allow for file downloads.
+- Render status bar based on activity.
