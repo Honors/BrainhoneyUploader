@@ -10,9 +10,14 @@
 
 @protocol BHFileUploadDelegate <NSObject>
 - (void)uploadSucceeded: (BOOL)success;
+- (void)gotCookie: (NSString *)cookie;
 @end
 
-@interface BHFileUpload : NSObject
+@interface BHFileUpload : NSObject <NSURLConnectionDelegate> {
+    NSMutableData *cookieData;
+}
 - (void)uploadForTeacher: (NSString *)cookie;
+- (void)getCookieForUser: (NSString *)username withPass: (NSString *)password;
+- (void)uploadForTeacher: (NSString *)cookie andEntity: (NSString *)entity;
 @property id<BHFileUploadDelegate> delegate;
 @end

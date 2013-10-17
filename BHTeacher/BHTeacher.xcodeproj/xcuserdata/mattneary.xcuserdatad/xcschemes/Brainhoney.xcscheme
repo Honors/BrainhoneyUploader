@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8161508617FB5388000897B9"
-               BuildableName = "Brainhoney.app"
+               BuildableName = "BHTeacher.app"
                BlueprintName = "BHTeacher"
                ReferencedContainer = "container:BHTeacher.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8161508617FB5388000897B9"
-            BuildableName = "Brainhoney.app"
+            BuildableName = "BHTeacher.app"
             BlueprintName = "BHTeacher"
             ReferencedContainer = "container:BHTeacher.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8161508617FB5388000897B9"
-            BuildableName = "Brainhoney.app"
+            BuildableName = "BHTeacher.app"
             BlueprintName = "BHTeacher"
             ReferencedContainer = "container:BHTeacher.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8161508617FB5388000897B9"
-            BuildableName = "Brainhoney.app"
+            BuildableName = "BHTeacher.app"
             BlueprintName = "BHTeacher"
             ReferencedContainer = "container:BHTeacher.xcodeproj">
          </BuildableReference>

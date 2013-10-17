@@ -41,12 +41,16 @@
     [[NSUserDefaults standardUserDefaults] setValue:password.text forKey:@"password"];
     [web stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"document.getElementById('username').value = '%@'; document.querySelector('input[name=password]').value = '%@'; Login();", username.text, password.text]];
     [self renderFile];
+    
+    BHFileUpload *uploader = [BHFileUpload alloc];
+    uploader.delegate = self;
+    [uploader getCookieForUser:username.text withPass:password.text];
 }
 - (IBAction)submitFile {
     // allocate an uploader and provide it with the assignment meta-data
     BHFileUpload *uploader = [BHFileUpload alloc];
     uploader.delegate = self;
-    [uploader uploadForTeacher:currentCookie];
+    [uploader uploadForTeacher:currentCookie andEntity:currentItem];
 }
 - (IBAction)goHome {
     // send the webview to its initial view
@@ -66,14 +70,16 @@
     }
     return dict;
 }
+- (void)gotCookie: (NSString *)cookie {
+    currentCookie = cookie;
+    submitButton.enabled = YES;
+    foundAssn = YES;
+}
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSMutableURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-    NSString *url = request.URL.absoluteString;
-    if( [url componentsSeparatedByString:@"Home"].count > 1 ) {
-        // if an assignment is being loaded, reflect the ability
-        // to submit in interface and `foundAssn`
-        submitButton.enabled = YES;
-        foundAssn = YES;
-        currentCookie = request.allHTTPHeaderFields[@"Cookie"];
+    NSString *url = ((NSHTTPURLResponse *)request).URL.absoluteString;
+    if( [url componentsSeparatedByString:@"enrollment"].count > 1 ) {
+        currentItem = [self parseQuery:url][@"enrollmentid"];
+        currentItem = [[currentItem componentsSeparatedByString:@"."] firstObject];
     }
     return YES;
 }
