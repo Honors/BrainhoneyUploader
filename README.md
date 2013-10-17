@@ -10,6 +10,11 @@ achieves this by two primary innovations:
 2. A web browser is used to render the Brainhoney website and observe assignment
    browsing. Once the user settles on an assignment, their choice, too, is cached.
 
+The means of importing the file will look something like the following, depending
+on the app from which the file is being exported.
+
+![Export](Information/export.png)
+
 # Implementation
 Within the `Information` folder are a couple shell scripts meant to illustrate
 the specifics of the uploading endpoint. The file `upload.sh` serves as a concise
