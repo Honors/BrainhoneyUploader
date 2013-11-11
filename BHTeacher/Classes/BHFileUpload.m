@@ -58,7 +58,7 @@
         // attach the file
         [formData appendPartWithFileURL:file name:@"up_file" error:nil];
     } success:^(AFHTTPRequestOperation *operation, NSString *responseObject) {
-        //[self.delegate uploadSucceeded:[responseObject isEqualToString:@"success"]];
+        [self.delegate uploaded];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];

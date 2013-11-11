@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @protocol BHFileUploadDelegate <NSObject>
-- (void)uploadSucceeded: (BOOL)success;
+- (void)uploaded;
 - (void)gotCookie: (NSString *)cookie;
 @end
 

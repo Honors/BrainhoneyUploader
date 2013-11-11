@@ -29,11 +29,10 @@
         statusBar.text = @"In order to upload a file, press \"Open with Brainhoney\" from another app, usually through an export button.";
     }
 }
-- (void)uploadSucceeded:(BOOL)success {
+- (void)uploaded {
     // render a status message based on the upload's success
-    statusBar.text = success ?
-        @"The file was uploaded successfully." :
-        @"The upload failed. Has a file already been submitted?";
+    // TODO: actually check whether it was successful.
+    statusBar.text = @"The file was uploaded successfully.";
 }
 - (IBAction)fill {
     // fill the login form within the webview and submit it
