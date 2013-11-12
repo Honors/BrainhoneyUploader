@@ -361,6 +361,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/Supporting Files/BHTeacher-Prefix.pch";
 				INFOPLIST_FILE = "Classes/Supporting Files/BHTeacher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = BHTeacher;
 				WRAPPER_EXTENSION = app;
 			};
@@ -373,6 +374,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/Supporting Files/BHTeacher-Prefix.pch";
 				INFOPLIST_FILE = "Classes/Supporting Files/BHTeacher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = BHTeacher;
 				WRAPPER_EXTENSION = app;
 			};

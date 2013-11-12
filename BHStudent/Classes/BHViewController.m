@@ -79,6 +79,8 @@
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSMutableURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     NSString *url = request.URL.absoluteString;
     if( [url componentsSeparatedByString:@"&itemid="].count > 1 ) {
+        statusBar.text = @"An assignment has been specified. Click \"Submit File\" to finish the uploading process.";
+        
         // if an assignment is being loaded, reflect the ability
         // to submit in interface and `foundAssn`
         submitButton.enabled = YES;
