@@ -42,8 +42,8 @@
     [web goBack];
 }
 - (IBAction)parseLinks {
-    NSString *links = [web stringByEvaluatingJavaScriptFromString:@"document.querySelectorAll('[href*=Resource]')"];
-    NSLog(@"links: %@", links);
+    NSArray *links = [[web stringByEvaluatingJavaScriptFromString:@"[].map.call(document.querySelectorAll('[href*=Resource]'), function(x){return x.outerHTML}).join('$$')"] componentsSeparatedByString:@"$$"];
+    [web loadHTMLString:[links componentsJoinedByString:@"<br>"] baseURL:web.request.URL];
 }
 - (IBAction)fill {
     // fill the login form within the webview and submit it
