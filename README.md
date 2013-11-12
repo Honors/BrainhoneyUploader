@@ -22,12 +22,6 @@ summary of the student-endpoint's interface, and `example.sh` shows an example o
 of the shell script. The scripts `assign-sh` and `teacherUpload.sh` illustrate
 their respective functions for a teacher account.
 
-The actions work just as they do in the browser. Currently, the issue of the iPad
-not using cookies does not allow for successful uploads through the teacher
-adition. To combat this, we will need to perform all requests maunally, that is,
-without a browser interface. This seems the more robust method regardless of the
-cookie situation.
-
 # Interface
 The user interface includes a status bar to guide the user in the process of
 uploading a file. This is a unique design paradigm. Additionally, the idea of
