@@ -26,7 +26,7 @@
         statusBar.text = @"The file to the left has been cached. Navigate to a course page then press \"Submit File\" to upload.";
         fileStatus.text = file.lastPathComponent;
     } else {
-        statusBar.text = @"In order to upload a file, press \"Open with Brainhoney\" from another app, usually through an export button.";
+        statusBar.text = @"In order to upload a file, press \"Open with BHTeacher\" from another app, usually through an export button.";
     }
 }
 - (void)uploadedSuccessfully: (BOOL)success {

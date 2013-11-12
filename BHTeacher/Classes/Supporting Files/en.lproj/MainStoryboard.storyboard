@@ -121,10 +121,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdb-R0-GrU">
-                                <rect key="frame" x="553" y="98" width="49" height="44"/>
+                                <rect key="frame" x="447" y="98" width="155" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Links">
+                                <state key="normal" title="Isolate Attachments">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -132,7 +132,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2b-8l-j2n">
-                                <rect key="frame" x="479" y="99" width="66" height="44"/>
+                                <rect key="frame" x="373" y="99" width="66" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="« Back">
@@ -145,8 +145,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="l2b-8l-j2n" firstAttribute="centerY" secondItem="Wdb-R0-GrU" secondAttribute="centerY" constant="1" id="1cG-vD-xCb"/>
                             <constraint firstItem="qme-S6-JAy" firstAttribute="top" secondItem="5" secondAttribute="top" constant="20" symbolic="YES" id="5Oc-gh-x2S"/>
                             <constraint firstItem="xBG-Gg-Cie" firstAttribute="top" secondItem="qme-S6-JAy" secondAttribute="bottom" constant="8" id="6Z0-pK-AlB"/>
+                            <constraint firstItem="l2b-8l-j2n" firstAttribute="centerY" secondItem="Wdb-R0-GrU" secondAttribute="centerY" constant="1" id="7d7-7M-C4t"/>
                             <constraint firstItem="VyF-fV-MHz" firstAttribute="centerY" secondItem="dyR-NX-bpw" secondAttribute="centerY" id="Adr-i0-MeB"/>
                             <constraint firstItem="Wdb-R0-GrU" firstAttribute="centerY" secondItem="dyR-NX-bpw" secondAttribute="centerY" id="Fod-QN-iL4"/>
                             <constraint firstItem="8dG-aD-ScS" firstAttribute="centerY" secondItem="VyF-fV-MHz" secondAttribute="centerY" constant="0.5" id="IyP-Oh-OOv"/>
