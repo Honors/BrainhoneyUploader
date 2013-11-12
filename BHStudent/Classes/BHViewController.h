@@ -22,5 +22,8 @@
 - (IBAction)fill;
 - (IBAction)submitFile;
 - (IBAction)goHome;
+- (IBAction)refresh;
+- (IBAction)goBack;
+- (IBAction)parseLinks;
 - (void)renderFile;
 @end

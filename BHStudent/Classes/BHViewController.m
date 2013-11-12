@@ -35,6 +35,16 @@
         @"The file was uploaded successfully." :
         @"The upload failed. Has a file already been submitted?";
 }
+- (IBAction)refresh {
+    [web reload];
+}
+- (IBAction)goBack {
+    [web goBack];
+}
+- (IBAction)parseLinks {
+    NSString *links = [web stringByEvaluatingJavaScriptFromString:@"document.querySelectorAll('[href*=Resource]')"];
+    NSLog(@"links: %@", links);
+}
 - (IBAction)fill {
     // fill the login form within the webview and submit it
     [[NSUserDefaults standardUserDefaults] setValue:username.text forKey:@"username"];
