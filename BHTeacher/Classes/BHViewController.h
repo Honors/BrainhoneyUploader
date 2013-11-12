@@ -23,5 +23,7 @@
 - (IBAction)submitFile;
 - (IBAction)goHome;
 - (IBAction)refresh;
+- (IBAction)parseLinks;
+- (IBAction)goBack;
 - (void)renderFile;
 @end

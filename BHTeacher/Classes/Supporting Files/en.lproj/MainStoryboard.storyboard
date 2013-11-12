@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4511" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4511" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3745"/>
@@ -120,12 +120,35 @@
                                     <action selector="refresh" destination="2" eventType="touchUpInside" id="Ehe-no-B73"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdb-R0-GrU">
+                                <rect key="frame" x="553" y="98" width="49" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Links">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="parseLinks" destination="2" eventType="touchUpInside" id="g7r-1i-XIk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2b-8l-j2n">
+                                <rect key="frame" x="479" y="99" width="66" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="« Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack" destination="2" eventType="touchUpInside" id="mip-mi-0lN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qme-S6-JAy" firstAttribute="top" secondItem="5" secondAttribute="top" constant="20" symbolic="YES" id="5Oc-gh-x2S"/>
                             <constraint firstItem="xBG-Gg-Cie" firstAttribute="top" secondItem="qme-S6-JAy" secondAttribute="bottom" constant="8" id="6Z0-pK-AlB"/>
                             <constraint firstItem="VyF-fV-MHz" firstAttribute="centerY" secondItem="dyR-NX-bpw" secondAttribute="centerY" id="Adr-i0-MeB"/>
+                            <constraint firstItem="Wdb-R0-GrU" firstAttribute="centerY" secondItem="dyR-NX-bpw" secondAttribute="centerY" id="Fod-QN-iL4"/>
                             <constraint firstItem="8dG-aD-ScS" firstAttribute="centerY" secondItem="VyF-fV-MHz" secondAttribute="centerY" constant="0.5" id="IyP-Oh-OOv"/>
                             <constraint firstAttribute="trailing" secondItem="qme-S6-JAy" secondAttribute="trailing" constant="20" symbolic="YES" id="JhR-pN-D63"/>
                             <constraint firstItem="byd-Gq-tEK" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" id="bBm-yu-ylQ"/>
@@ -135,6 +158,7 @@
                             <constraint firstItem="byd-Gq-tEK" firstAttribute="top" secondItem="8dG-aD-ScS" secondAttribute="bottom" constant="8" symbolic="YES" id="iKP-ds-mLh"/>
                             <constraint firstItem="qme-S6-JAy" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" id="jNO-UT-Lyr"/>
                             <constraint firstItem="8dG-aD-ScS" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="231" id="pLp-KZ-OUE"/>
+                            <constraint firstItem="l2b-8l-j2n" firstAttribute="centerY" secondItem="Wdb-R0-GrU" secondAttribute="centerY" constant="1" id="z8E-oy-bqy"/>
                             <constraint firstItem="byd-Gq-tEK" firstAttribute="leading" secondItem="5" secondAttribute="leading" id="zDz-px-Rt5"/>
                         </constraints>
                     </view>

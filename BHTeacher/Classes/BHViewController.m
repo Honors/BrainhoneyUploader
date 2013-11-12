@@ -36,6 +36,13 @@
 - (IBAction)refresh {
     [web reload];
 }
+- (IBAction)parseLinks {
+    NSArray *links = [[web stringByEvaluatingJavaScriptFromString:@"[].map.call(document.querySelectorAll('[href*=Dropbox]'), function(x){return x.outerHTML}).join('$$')"] componentsSeparatedByString:@"$$"];
+    [web loadHTMLString:[links componentsJoinedByString:@"<br>"] baseURL:[NSURL URLWithString:web.request.URL.absoluteString]];
+}
+- (IBAction)goBack {
+    [web goBack];
+}
 - (IBAction)fill {
     // fill the login form within the webview and submit it
     [[NSUserDefaults standardUserDefaults] setValue:username.text forKey:@"username"];
