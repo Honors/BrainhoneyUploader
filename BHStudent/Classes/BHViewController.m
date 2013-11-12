@@ -42,7 +42,7 @@
     [web goBack];
 }
 - (IBAction)parseLinks {
-    NSArray *links = [[web stringByEvaluatingJavaScriptFromString:@"[].map.call(document.querySelectorAll('[href*=Resource]'), function(x){return x.outerHTML}).join('$$')"] componentsSeparatedByString:@"$$"];
+    NSArray *links = [[web stringByEvaluatingJavaScriptFromString:@"[].map.call(document.querySelectorAll('[href*=Resource]'), function(x){return '<a href=\"'+x.href+'\">'+x.innerHTML+'</a>'}).join('$$')"] componentsSeparatedByString:@"$$"];
     [web loadHTMLString:[links componentsJoinedByString:@"<br>"] baseURL:web.request.URL];
 }
 - (IBAction)fill {
