@@ -23,16 +23,18 @@
     // render the file-cache view and status bar based on the presence of a cached file
     NSString *file = [[NSUserDefaults standardUserDefaults] valueForKey:@"file_url"];
     if( file != nil ) {
-        statusBar.text = @"The file to the left has been cached. Navigate to an assignment then press \"Submit File\" to upload.";
+        statusBar.text = @"The file to the left has been cached. Navigate to a course page then press \"Submit File\" to upload.";
         fileStatus.text = file.lastPathComponent;
     } else {
         statusBar.text = @"In order to upload a file, press \"Open with Brainhoney\" from another app, usually through an export button.";
     }
 }
-- (void)uploaded {
+- (void)uploadedSuccessfully: (BOOL)success {
     // render a status message based on the upload's success
-    // TODO: actually check whether it was successful.
-    statusBar.text = @"The file was uploaded successfully.";
+    statusBar.text = success ? @"The file was uploaded successfully." : @"The file upload failed.";
+}
+- (IBAction)refresh {
+    [web reload];
 }
 - (IBAction)fill {
     // fill the login form within the webview and submit it
@@ -77,6 +79,7 @@
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSMutableURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     NSString *url = ((NSHTTPURLResponse *)request).URL.absoluteString;
     if( [url componentsSeparatedByString:@"enrollment"].count > 1 ) {
+        statusBar.text = @"A course has been selected. Press \"Submit File\" to finish the upload process.";
         currentItem = [self parseQuery:url][@"enrollmentid"];
         currentItem = [[currentItem componentsSeparatedByString:@"."] firstObject];
     }

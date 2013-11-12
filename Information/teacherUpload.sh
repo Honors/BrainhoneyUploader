@@ -1,3 +1,4 @@
+#!/bin/bash
 cookie=`cat $1`
 fname=homescreen.png
 entity=14915878

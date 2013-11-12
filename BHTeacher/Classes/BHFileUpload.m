@@ -53,12 +53,11 @@
     
     // send the POST request
     NSString *endpoint = [self endpointForEntity:entity withCookie:cookie andFileName:fname];
-    NSLog(@"EP: %@", endpoint);
     [manager POST:endpoint parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         // attach the file
         [formData appendPartWithFileURL:file name:@"up_file" error:nil];
     } success:^(AFHTTPRequestOperation *operation, NSString *responseObject) {
-        [self.delegate uploaded];
+        [self.delegate uploadedSuccessfully:[responseObject componentsSeparatedByString:@"\"success\": true"].count>1];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
