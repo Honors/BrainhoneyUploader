@@ -30,6 +30,7 @@
 		8169F1A51833E0DE00A4CEC9 /* glyph-home.png in Resources */ = {isa = PBXBuildFile; fileRef = 8169F1A21833E0DE00A4CEC9 /* glyph-home.png */; };
 		8169F1A61833E0DE00A4CEC9 /* glyph-refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 8169F1A31833E0DE00A4CEC9 /* glyph-refresh.png */; };
 		8169F1A81833F00D00A4CEC9 /* glyph-attaches.png in Resources */ = {isa = PBXBuildFile; fileRef = 8169F1A71833F00D00A4CEC9 /* glyph-attaches.png */; };
+		8169F1B41833F62600A4CEC9 /* glyph-browser.png in Resources */ = {isa = PBXBuildFile; fileRef = 8169F1B31833F62600A4CEC9 /* glyph-browser.png */; };
 		81D380BD17FBC252008B6729 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D380BC17FBC1E3008B6729 /* main.m */; };
 		81D380C017FBC2F7008B6729 /* BHFileUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D380BF17FBC2E7008B6729 /* BHFileUpload.m */; };
 		81D380C117FBC72E008B6729 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D380BA17FBC1E3008B6729 /* MainStoryboard.storyboard */; };
@@ -76,6 +77,7 @@
 		8169F1A21833E0DE00A4CEC9 /* glyph-home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "glyph-home.png"; path = "Supporting Files/glyph-home.png"; sourceTree = "<group>"; };
 		8169F1A31833E0DE00A4CEC9 /* glyph-refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "glyph-refresh.png"; path = "Supporting Files/glyph-refresh.png"; sourceTree = "<group>"; };
 		8169F1A71833F00D00A4CEC9 /* glyph-attaches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "glyph-attaches.png"; path = "Supporting Files/glyph-attaches.png"; sourceTree = "<group>"; };
+		8169F1B31833F62600A4CEC9 /* glyph-browser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "glyph-browser.png"; path = "Supporting Files/glyph-browser.png"; sourceTree = "<group>"; };
 		81D380B217FBC1E3008B6729 /* Brainhoney-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Brainhoney-Info.plist"; path = "Supporting Files/Brainhoney-Info.plist"; sourceTree = "<group>"; };
 		81D380B317FBC1E3008B6729 /* Brainhoney-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Brainhoney-Prefix.pch"; path = "Supporting Files/Brainhoney-Prefix.pch"; sourceTree = "<group>"; };
 		81D380B417FBC1E3008B6729 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Supporting Files/Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				8169F1A11833E0DE00A4CEC9 /* glyph-back.png */,
 				8169F1A21833E0DE00A4CEC9 /* glyph-home.png */,
 				8169F1A31833E0DE00A4CEC9 /* glyph-refresh.png */,
+				8169F1B31833F62600A4CEC9 /* glyph-browser.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8169F1B41833F62600A4CEC9 /* glyph-browser.png in Resources */,
 				81D380C117FBC72E008B6729 /* MainStoryboard.storyboard in Resources */,
 				8169F1A61833E0DE00A4CEC9 /* glyph-refresh.png in Resources */,
 				8113203217FCB29E0044B95F /* Settings.bundle in Resources */,

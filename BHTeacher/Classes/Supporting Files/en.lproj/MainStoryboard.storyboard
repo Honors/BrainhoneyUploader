@@ -24,6 +24,65 @@
                                     <constraint firstAttribute="height" constant="861" id="XSu-mx-XM6"/>
                                 </constraints>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXK-Rd-8xd">
+                                <rect key="frame" x="706" y="105" width="42" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.34442892670000003" green="0.78604525329999997" blue="0.77866226429999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="AfQ-eh-rvg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="glyph-home.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome" destination="2" eventType="touchUpInside" id="Nr7-LW-BNd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGX-Zo-PgT">
+                                <rect key="frame" x="657" y="105" width="42" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.34442892670000003" green="0.78604525329999997" blue="0.77866226429999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="glyph-refresh.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refresh" destination="2" eventType="touchUpInside" id="KbO-1A-w4d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86x-D1-334">
+                                <rect key="frame" x="557" y="105" width="42" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.34442892670000003" green="0.78604525329999997" blue="0.77866226429999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="glyph-attaches.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="parseLinks" destination="2" eventType="touchUpInside" id="krX-3X-72c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dk2-Io-jMe">
+                                <rect key="frame" x="507" y="105" width="42" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.34442892670000003" green="0.78604525329999997" blue="0.77866226429999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="glyph-browser.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openInBrowser" destination="2" eventType="touchUpInside" id="S8h-W2-0uR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a0-14-WLn">
+                                <rect key="frame" x="607" y="105" width="42" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.34442892670000003" green="0.78604525329999997" blue="0.77866226429999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="glyph-back.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack" destination="2" eventType="touchUpInside" id="2bZ-FL-Y5Y"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qme-S6-JAy">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="97"/>
                                 <subviews>
@@ -98,66 +157,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyF-fV-MHz">
-                                <rect key="frame" x="675" y="98" width="73" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Home">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="goHome" destination="2" eventType="touchUpInside" id="J40-2w-e9Q"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyR-NX-bpw">
-                                <rect key="frame" x="594" y="98" width="73" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Refresh">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="refresh" destination="2" eventType="touchUpInside" id="Ehe-no-B73"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdb-R0-GrU">
-                                <rect key="frame" x="426" y="98" width="155" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Isolate Attachments">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="parseLinks" destination="2" eventType="touchUpInside" id="g7r-1i-XIk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2b-8l-j2n">
-                                <rect key="frame" x="352" y="98" width="66" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="« Back">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="goBack" destination="2" eventType="touchUpInside" id="mip-mi-0lN"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="l2b-8l-j2n" firstAttribute="centerY" secondItem="Wdb-R0-GrU" secondAttribute="centerY" constant="1" id="1cG-vD-xCb"/>
+                            <constraint firstItem="IXK-Rd-8xd" firstAttribute="top" secondItem="qme-S6-JAy" secondAttribute="bottom" constant="8" id="2as-8B-xZ5"/>
                             <constraint firstItem="qme-S6-JAy" firstAttribute="top" secondItem="5" secondAttribute="top" constant="20" symbolic="YES" id="5Oc-gh-x2S"/>
                             <constraint firstItem="xBG-Gg-Cie" firstAttribute="top" secondItem="qme-S6-JAy" secondAttribute="bottom" constant="8" id="6Z0-pK-AlB"/>
-                            <constraint firstItem="l2b-8l-j2n" firstAttribute="centerY" secondItem="Wdb-R0-GrU" secondAttribute="centerY" constant="1" id="7d7-7M-C4t"/>
-                            <constraint firstItem="VyF-fV-MHz" firstAttribute="centerY" secondItem="dyR-NX-bpw" secondAttribute="centerY" id="Adr-i0-MeB"/>
-                            <constraint firstItem="Wdb-R0-GrU" firstAttribute="centerY" secondItem="dyR-NX-bpw" secondAttribute="centerY" id="Fod-QN-iL4"/>
-                            <constraint firstItem="8dG-aD-ScS" firstAttribute="centerY" secondItem="VyF-fV-MHz" secondAttribute="centerY" constant="0.5" id="IyP-Oh-OOv"/>
                             <constraint firstAttribute="trailing" secondItem="qme-S6-JAy" secondAttribute="trailing" constant="20" symbolic="YES" id="JhR-pN-D63"/>
+                            <constraint firstItem="Dk2-Io-jMe" firstAttribute="centerY" secondItem="86x-D1-334" secondAttribute="centerY" id="P7r-2I-LM0"/>
+                            <constraint firstItem="2a0-14-WLn" firstAttribute="centerY" secondItem="86x-D1-334" secondAttribute="centerY" id="SZf-in-8j2"/>
+                            <constraint firstItem="byd-Gq-tEK" firstAttribute="top" secondItem="IXK-Rd-8xd" secondAttribute="bottom" constant="6" id="XOY-CL-JCY"/>
                             <constraint firstItem="byd-Gq-tEK" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" id="bBm-yu-ylQ"/>
                             <constraint firstItem="byd-Gq-tEK" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" id="dFp-gB-s7a"/>
                             <constraint firstItem="hsy-C5-gMj" firstAttribute="top" secondItem="qme-S6-JAy" secondAttribute="bottom" constant="8" id="e7j-xf-SRN"/>
                             <constraint firstItem="8dG-aD-ScS" firstAttribute="top" secondItem="qme-S6-JAy" secondAttribute="bottom" constant="8" symbolic="YES" id="hcK-Qx-zUg"/>
+                            <constraint firstItem="86x-D1-334" firstAttribute="centerY" secondItem="QGX-Zo-PgT" secondAttribute="centerY" id="heB-pg-5mO"/>
                             <constraint firstItem="byd-Gq-tEK" firstAttribute="top" secondItem="8dG-aD-ScS" secondAttribute="bottom" constant="8" symbolic="YES" id="iKP-ds-mLh"/>
                             <constraint firstItem="qme-S6-JAy" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" id="jNO-UT-Lyr"/>
                             <constraint firstItem="8dG-aD-ScS" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="231" id="pLp-KZ-OUE"/>
-                            <constraint firstItem="l2b-8l-j2n" firstAttribute="centerY" secondItem="Wdb-R0-GrU" secondAttribute="centerY" constant="1" id="z8E-oy-bqy"/>
+                            <constraint firstItem="IXK-Rd-8xd" firstAttribute="centerY" secondItem="QGX-Zo-PgT" secondAttribute="centerY" id="vYf-Cs-6ea"/>
                             <constraint firstItem="byd-Gq-tEK" firstAttribute="leading" secondItem="5" secondAttribute="leading" id="zDz-px-Rt5"/>
                         </constraints>
                     </view>
@@ -177,6 +195,13 @@
             <point key="canvasLocation" x="142" y="-243"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="glyph-attaches.png" width="10" height="12"/>
+        <image name="glyph-back.png" width="8" height="12"/>
+        <image name="glyph-browser.png" width="12" height="12"/>
+        <image name="glyph-home.png" width="11" height="12"/>
+        <image name="glyph-refresh.png" width="11" height="12"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
         <simulatedOrientationMetrics key="orientation"/>

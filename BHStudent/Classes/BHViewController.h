@@ -25,5 +25,6 @@
 - (IBAction)refresh;
 - (IBAction)goBack;
 - (IBAction)parseLinks;
+- (IBAction)openInBrowser;
 - (void)renderFile;
 @end

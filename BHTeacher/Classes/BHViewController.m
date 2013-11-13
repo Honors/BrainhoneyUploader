@@ -66,6 +66,10 @@
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:[devswitch intValue] ? @"https://bwhst.brainhoney.com" : @"https://bwhs.brainhoney.com"]];
     [web loadRequest:request];
 }
+- (IBAction)openInBrowser {
+    // open current link in browser
+    [[UIApplication sharedApplication] openURL:web.request.URL];
+}
 - (NSDictionary *)parseQuery: (NSString *)filename {
     // a simple GET query string parser
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithCapacity:255];

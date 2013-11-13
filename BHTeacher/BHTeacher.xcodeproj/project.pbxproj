@@ -26,6 +26,11 @@
 		816150D117FB554F000897B9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816150D017FB554F000897B9 /* CoreLocation.framework */; };
 		816150D317FB5555000897B9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816150D217FB5555000897B9 /* MobileCoreServices.framework */; };
 		816150D517FB555F000897B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816150D417FB555F000897B9 /* SystemConfiguration.framework */; };
+		8169F1AD1833F49D00A4CEC9 /* glyph-attaches.png in Resources */ = {isa = PBXBuildFile; fileRef = 8169F1A91833F49D00A4CEC9 /* glyph-attaches.png */; };
+		8169F1AE1833F49D00A4CEC9 /* glyph-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 8169F1AA1833F49D00A4CEC9 /* glyph-back.png */; };
+		8169F1AF1833F49D00A4CEC9 /* glyph-home.png in Resources */ = {isa = PBXBuildFile; fileRef = 8169F1AB1833F49D00A4CEC9 /* glyph-home.png */; };
+		8169F1B01833F49D00A4CEC9 /* glyph-refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 8169F1AC1833F49D00A4CEC9 /* glyph-refresh.png */; };
+		8169F1B21833F61A00A4CEC9 /* glyph-browser.png in Resources */ = {isa = PBXBuildFile; fileRef = 8169F1B11833F61A00A4CEC9 /* glyph-browser.png */; };
 		81D380BD17FBC252008B6729 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D380BC17FBC1E3008B6729 /* main.m */; };
 		81D380C017FBC2F7008B6729 /* BHFileUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D380BF17FBC2E7008B6729 /* BHFileUpload.m */; };
 		81D380C117FBC72E008B6729 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D380BA17FBC1E3008B6729 /* MainStoryboard.storyboard */; };
@@ -68,6 +73,11 @@
 		816150D017FB554F000897B9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		816150D217FB5555000897B9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		816150D417FB555F000897B9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8169F1A91833F49D00A4CEC9 /* glyph-attaches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyph-attaches.png"; sourceTree = "<group>"; };
+		8169F1AA1833F49D00A4CEC9 /* glyph-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyph-back.png"; sourceTree = "<group>"; };
+		8169F1AB1833F49D00A4CEC9 /* glyph-home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyph-home.png"; sourceTree = "<group>"; };
+		8169F1AC1833F49D00A4CEC9 /* glyph-refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyph-refresh.png"; sourceTree = "<group>"; };
+		8169F1B11833F61A00A4CEC9 /* glyph-browser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyph-browser.png"; sourceTree = "<group>"; };
 		81D380B217FBC1E3008B6729 /* BHTeacher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "BHTeacher-Info.plist"; path = "Supporting Files/BHTeacher-Info.plist"; sourceTree = "<group>"; };
 		81D380B317FBC1E3008B6729 /* BHTeacher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BHTeacher-Prefix.pch"; path = "Supporting Files/BHTeacher-Prefix.pch"; sourceTree = "<group>"; };
 		81D380B417FBC1E3008B6729 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Supporting Files/Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -155,6 +165,11 @@
 				81D380B817FBC1E3008B6729 /* InfoPlist.strings */,
 				81D380BC17FBC1E3008B6729 /* main.m */,
 				81D380B317FBC1E3008B6729 /* BHTeacher-Prefix.pch */,
+				8169F1A91833F49D00A4CEC9 /* glyph-attaches.png */,
+				8169F1AA1833F49D00A4CEC9 /* glyph-back.png */,
+				8169F1AB1833F49D00A4CEC9 /* glyph-home.png */,
+				8169F1AC1833F49D00A4CEC9 /* glyph-refresh.png */,
+				8169F1B11833F61A00A4CEC9 /* glyph-browser.png */,
 				81D380B417FBC1E3008B6729 /* Default-568h@2x.png */,
 				81D380B517FBC1E3008B6729 /* Default.png */,
 				81D380B617FBC1E3008B6729 /* Default@2x.png */,
@@ -240,12 +255,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8169F1B21833F61A00A4CEC9 /* glyph-browser.png in Resources */,
 				81D380C117FBC72E008B6729 /* MainStoryboard.storyboard in Resources */,
 				8113203217FCB29E0044B95F /* Settings.bundle in Resources */,
 				81D380C217FBC72E008B6729 /* Default-568h@2x.png in Resources */,
+				8169F1AE1833F49D00A4CEC9 /* glyph-back.png in Resources */,
 				81D380C317FBC72E008B6729 /* Default.png in Resources */,
+				8169F1AF1833F49D00A4CEC9 /* glyph-home.png in Resources */,
 				81D380C417FBC72E008B6729 /* Default@2x.png in Resources */,
 				81D380C817FBCD15008B6729 /* upload_icon.png in Resources */,
+				8169F1B01833F49D00A4CEC9 /* glyph-refresh.png in Resources */,
+				8169F1AD1833F49D00A4CEC9 /* glyph-attaches.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

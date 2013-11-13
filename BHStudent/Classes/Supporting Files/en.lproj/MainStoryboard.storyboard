@@ -132,6 +132,17 @@
                                     <action selector="parseLinks" destination="2" eventType="touchUpInside" id="ccg-Aa-0et"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPS-CO-rON">
+                                <rect key="frame" x="507" y="105" width="42" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.34442892670000003" green="0.78604525329999997" blue="0.77866226429999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="glyph-browser.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openInBrowser" destination="2" eventType="touchUpInside" id="Gnb-68-8kU"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vsa-nW-jNB">
                                 <rect key="frame" x="607" y="105" width="42" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -151,6 +162,7 @@
                             <constraint firstItem="xBG-Gg-Cie" firstAttribute="top" secondItem="qme-S6-JAy" secondAttribute="bottom" constant="8" id="6Z0-pK-AlB"/>
                             <constraint firstItem="8dG-aD-ScS" firstAttribute="centerY" secondItem="VyF-fV-MHz" secondAttribute="centerY" constant="0.5" id="IyP-Oh-OOv"/>
                             <constraint firstAttribute="trailing" secondItem="qme-S6-JAy" secondAttribute="trailing" constant="20" symbolic="YES" id="JhR-pN-D63"/>
+                            <constraint firstItem="xPS-CO-rON" firstAttribute="centerY" secondItem="tTs-Yg-nzH" secondAttribute="centerY" id="aB0-Wb-z8d"/>
                             <constraint firstItem="Vsa-nW-jNB" firstAttribute="centerY" secondItem="tTs-Yg-nzH" secondAttribute="centerY" id="b4m-KB-eJj"/>
                             <constraint firstItem="byd-Gq-tEK" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" id="bBm-yu-ylQ"/>
                             <constraint firstItem="byd-Gq-tEK" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" id="dFp-gB-s7a"/>
@@ -182,6 +194,7 @@
     <resources>
         <image name="glyph-attaches.png" width="10" height="12"/>
         <image name="glyph-back.png" width="8" height="12"/>
+        <image name="glyph-browser.png" width="12" height="12"/>
         <image name="glyph-home.png" width="11" height="12"/>
         <image name="glyph-refresh.png" width="11" height="12"/>
     </resources>

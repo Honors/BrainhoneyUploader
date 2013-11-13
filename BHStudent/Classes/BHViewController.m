@@ -51,6 +51,10 @@
     NSArray *links = [[web stringByEvaluatingJavaScriptFromString:@"[].map.call(document.querySelectorAll('[href*=Resource]'), function(x){return '<a href=\"'+x.href+'\">'+x.innerHTML+'</a>'}).join('$$')"] componentsSeparatedByString:@"$$"];
     [web loadHTMLString:[links componentsJoinedByString:@"<br>"] baseURL:web.request.URL];
 }
+- (IBAction)openInBrowser {
+    // open current link in browser
+    [[UIApplication sharedApplication] openURL:web.request.URL];
+}
 - (IBAction)fill {
     // fill the login form within the webview and submit it
     [[NSUserDefaults standardUserDefaults] setValue:username.text forKey:@"username"];
