@@ -41,6 +41,12 @@
 - (IBAction)goBack {
     [web goBack];
 }
+- (IBAction)goHome {
+    // send the webview to its initial view
+    id devswitch = [[NSUserDefaults standardUserDefaults] valueForKey:@"devswitch"];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:[devswitch intValue] ? @"https://bwhst.brainhoney.com" : @"https://bwhs.brainhoney.com"]];
+    [web loadRequest:request];
+}
 - (IBAction)parseLinks {
     NSArray *links = [[web stringByEvaluatingJavaScriptFromString:@"[].map.call(document.querySelectorAll('[href*=Resource]'), function(x){return '<a href=\"'+x.href+'\">'+x.innerHTML+'</a>'}).join('$$')"] componentsSeparatedByString:@"$$"];
     [web loadHTMLString:[links componentsJoinedByString:@"<br>"] baseURL:web.request.URL];
@@ -57,12 +63,6 @@
     BHFileUpload *uploader = [BHFileUpload alloc];
     uploader.delegate = self;
     [uploader uploadForStudent:currentCookie inClass:currentClass forItem:currentItem];
-}
-- (IBAction)goHome {
-    // send the webview to its initial view
-    id devswitch = [[NSUserDefaults standardUserDefaults] valueForKey:@"devswitch"];
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:[devswitch intValue] ? @"https://bwhst.brainhoney.com" : @"https://bwhs.brainhoney.com"]];
-    [web loadRequest:request];
 }
 - (NSDictionary *)parseQuery: (NSString *)filename {
     // a simple GET query string parser
