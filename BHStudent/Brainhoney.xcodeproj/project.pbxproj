@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8113203217FCB29E0044B95F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8113203117FC867E0044B95F /* Settings.bundle */; };
+		815AA213183EE2C20056AA7C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 815AA211183EE2C20056AA7C /* MainStoryboard.storyboard */; };
+		815AA215183EE3300056AA7C /* icon@72.png in Resources */ = {isa = PBXBuildFile; fileRef = 815AA214183EE3300056AA7C /* icon@72.png */; };
 		8161508B17FB5389000897B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8161508A17FB5389000897B9 /* UIKit.framework */; };
 		8161508D17FB5389000897B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8161508C17FB5389000897B9 /* Foundation.framework */; };
 		8161508F17FB5389000897B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8161508E17FB5389000897B9 /* CoreGraphics.framework */; };
@@ -33,7 +35,6 @@
 		8169F1B41833F62600A4CEC9 /* glyph-browser.png in Resources */ = {isa = PBXBuildFile; fileRef = 8169F1B31833F62600A4CEC9 /* glyph-browser.png */; };
 		81D380BD17FBC252008B6729 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D380BC17FBC1E3008B6729 /* main.m */; };
 		81D380C017FBC2F7008B6729 /* BHFileUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D380BF17FBC2E7008B6729 /* BHFileUpload.m */; };
-		81D380C117FBC72E008B6729 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D380BA17FBC1E3008B6729 /* MainStoryboard.storyboard */; };
 		81D380C217FBC72E008B6729 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D380B417FBC1E3008B6729 /* Default-568h@2x.png */; };
 		81D380C317FBC72E008B6729 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D380B517FBC1E3008B6729 /* Default.png */; };
 		81D380C417FBC72E008B6729 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D380B617FBC1E3008B6729 /* Default@2x.png */; };
@@ -42,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		8113203117FC867E0044B95F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = "Supporting Files/Settings.bundle"; sourceTree = "<group>"; };
+		815AA212183EE2C20056AA7C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "Supporting Files/en.lproj/MainStoryboard.storyboard"; sourceTree = "<group>"; };
+		815AA214183EE3300056AA7C /* icon@72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@72.png"; path = "Supporting Files/icon@72.png"; sourceTree = "<group>"; };
 		8161508717FB5389000897B9 /* Brainhoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainhoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8161508A17FB5389000897B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8161508C17FB5389000897B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -84,7 +87,6 @@
 		81D380B517FBC1E3008B6729 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Supporting Files/Default.png"; sourceTree = "<group>"; };
 		81D380B617FBC1E3008B6729 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Supporting Files/Default@2x.png"; sourceTree = "<group>"; };
 		81D380B917FBC1E3008B6729 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
-		81D380BB17FBC1E3008B6729 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		81D380BC17FBC1E3008B6729 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
 		81D380BE17FBC2E7008B6729 /* BHFileUpload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHFileUpload.h; sourceTree = "<group>"; };
 		81D380BF17FBC2E7008B6729 /* BHFileUpload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHFileUpload.m; sourceTree = "<group>"; };
@@ -143,10 +145,10 @@
 		8161509017FB5389000897B9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				815AA211183EE2C20056AA7C /* MainStoryboard.storyboard */,
 				816150AD17FB53D2000897B9 /* AFNetworking */,
 				8161509917FB5389000897B9 /* BHAppDelegate.h */,
 				8161509A17FB5389000897B9 /* BHAppDelegate.m */,
-				81D380BA17FBC1E3008B6729 /* MainStoryboard.storyboard */,
 				816150A517FB5389000897B9 /* BHViewController.h */,
 				816150A617FB5389000897B9 /* BHViewController.m */,
 				81D380BE17FBC2E7008B6729 /* BHFileUpload.h */,
@@ -161,6 +163,7 @@
 			children = (
 				8113203117FC867E0044B95F /* Settings.bundle */,
 				81D380C717FBCD15008B6729 /* upload_icon.png */,
+				815AA214183EE3300056AA7C /* icon@72.png */,
 				81D380B217FBC1E3008B6729 /* Brainhoney-Info.plist */,
 				81D380B817FBC1E3008B6729 /* InfoPlist.strings */,
 				81D380BC17FBC1E3008B6729 /* main.m */,
@@ -256,13 +259,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8169F1B41833F62600A4CEC9 /* glyph-browser.png in Resources */,
-				81D380C117FBC72E008B6729 /* MainStoryboard.storyboard in Resources */,
+				815AA213183EE2C20056AA7C /* MainStoryboard.storyboard in Resources */,
 				8169F1A61833E0DE00A4CEC9 /* glyph-refresh.png in Resources */,
 				8113203217FCB29E0044B95F /* Settings.bundle in Resources */,
 				8169F1A41833E0DE00A4CEC9 /* glyph-back.png in Resources */,
 				8169F1A51833E0DE00A4CEC9 /* glyph-home.png in Resources */,
 				8169F1A81833F00D00A4CEC9 /* glyph-attaches.png in Resources */,
 				81D380C217FBC72E008B6729 /* Default-568h@2x.png in Resources */,
+				815AA215183EE3300056AA7C /* icon@72.png in Resources */,
 				81D380C317FBC72E008B6729 /* Default.png in Resources */,
 				81D380C417FBC72E008B6729 /* Default@2x.png in Resources */,
 				81D380C817FBCD15008B6729 /* upload_icon.png in Resources */,
@@ -295,21 +299,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		815AA211183EE2C20056AA7C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				815AA212183EE2C20056AA7C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
 		81D380B817FBC1E3008B6729 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				81D380B917FBC1E3008B6729 /* en */,
 			);
 			name = InfoPlist.strings;
-			path = "Supporting Files/en.lproj";
-			sourceTree = "<group>";
-		};
-		81D380BA17FBC1E3008B6729 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				81D380BB17FBC1E3008B6729 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			path = "Supporting Files/en.lproj";
 			sourceTree = "<group>";
 		};

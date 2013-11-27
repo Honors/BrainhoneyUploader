@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8113203217FCB29E0044B95F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8113203117FC867E0044B95F /* Settings.bundle */; };
+		815AA210183EE1C60056AA7C /* icon@72.png in Resources */ = {isa = PBXBuildFile; fileRef = 815AA20F183EE1C60056AA7C /* icon@72.png */; };
 		8161508B17FB5389000897B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8161508A17FB5389000897B9 /* UIKit.framework */; };
 		8161508D17FB5389000897B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8161508C17FB5389000897B9 /* Foundation.framework */; };
 		8161508F17FB5389000897B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8161508E17FB5389000897B9 /* CoreGraphics.framework */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		8113203117FC867E0044B95F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = "Supporting Files/Settings.bundle"; sourceTree = "<group>"; };
+		815AA20F183EE1C60056AA7C /* icon@72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@72.png"; path = "Supporting Files/icon@72.png"; sourceTree = "<group>"; };
 		8161508717FB5389000897B9 /* BHTeacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BHTeacher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8161508A17FB5389000897B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8161508C17FB5389000897B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -159,6 +161,7 @@
 		8161509117FB5389000897B9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				815AA20F183EE1C60056AA7C /* icon@72.png */,
 				8113203117FC867E0044B95F /* Settings.bundle */,
 				81D380C717FBCD15008B6729 /* upload_icon.png */,
 				81D380B217FBC1E3008B6729 /* BHTeacher-Info.plist */,
@@ -232,6 +235,11 @@
 				CLASSPREFIX = BH;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = mattneary;
+				TargetAttributes = {
+					8161508617FB5388000897B9 = {
+						DevelopmentTeam = 2QNE754S2P;
+					};
+				};
 			};
 			buildConfigurationList = 8161508217FB5388000897B9 /* Build configuration list for PBXProject "BHTeacher" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -263,6 +271,7 @@
 				81D380C317FBC72E008B6729 /* Default.png in Resources */,
 				8169F1AF1833F49D00A4CEC9 /* glyph-home.png in Resources */,
 				81D380C417FBC72E008B6729 /* Default@2x.png in Resources */,
+				815AA210183EE1C60056AA7C /* icon@72.png in Resources */,
 				81D380C817FBCD15008B6729 /* upload_icon.png in Resources */,
 				8169F1B01833F49D00A4CEC9 /* glyph-refresh.png in Resources */,
 				8169F1AD1833F49D00A4CEC9 /* glyph-attaches.png in Resources */,
@@ -378,11 +387,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/Supporting Files/BHTeacher-Prefix.pch";
 				INFOPLIST_FILE = "Classes/Supporting Files/BHTeacher-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = BHTeacher;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,11 +402,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/Supporting Files/BHTeacher-Prefix.pch";
 				INFOPLIST_FILE = "Classes/Supporting Files/BHTeacher-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = BHTeacher;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
