@@ -1,5 +1,9 @@
 # Brainhoney Uploader
 
+Both editions of the app are available through the App Store: the 
+[Student](https://itunes.apple.com/us/app/bhstudent/id763152364?ls=1&mt=8) &
+[Teacher](https://itunes.apple.com/us/app/bhteacher/id763140069?ls=1&mt=8) versions.
+
 ![Homescreen](Information/homescreen.png)
 
 This app is meant to allow iPad users to upload assignments to Brainhoney. It
