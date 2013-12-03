@@ -12,8 +12,9 @@
 @implementation BHFileUpload
 - (NSString *)endpoint {
     // based on a user's settings, the endpoint to which to upload
-    id devswitch = [[NSUserDefaults standardUserDefaults] valueForKey:@"devswitch"];
-    return [devswitch intValue] ? @"https://bwhst.brainhoney.com/Content/Assignment.ashx" : @"https://bwhs.brainhoney.com/Content/Assignment.ashx";
+    id domain = [[NSUserDefaults standardUserDefaults] valueForKey:@"domain"];
+    domain = domain == nil ? @"bwhs" : domain;
+    return [NSString stringWithFormat:@"https://%@.brainhoney.com/Content/Assignment.ashx", domain];
 }
 - (void)uploadForStudent: (NSString *)cookie inClass: (NSString *)enrollment forItem: (NSString *)itemid {
     // prepare cached file
