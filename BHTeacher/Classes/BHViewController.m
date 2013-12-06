@@ -62,8 +62,10 @@
 }
 - (IBAction)goHome {
     // send the webview to its initial view
-    id devswitch = [[NSUserDefaults standardUserDefaults] valueForKey:@"devswitch"];
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:[devswitch intValue] ? @"https://bwhst.brainhoney.com" : @"https://bwhs.brainhoney.com"]];
+    id domain = [[NSUserDefaults standardUserDefaults] valueForKey:@"domain"];
+    domain = domain == nil ? @"bwhs" : domain;
+    NSString *home = [NSString stringWithFormat:@"https://%@.brainhoney.com", domain];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:home]];
     [web loadRequest:request];
 }
 - (IBAction)openInBrowser {

@@ -12,8 +12,10 @@
 @implementation BHFileUpload
 - (NSString *)endpointForEntity: (NSString *)entity withCookie: (NSString *)cookie andFileName: (NSString *)fname  {
     // based on a user's settings, the endpoint to which to upload
-    id devswitch = [[NSUserDefaults standardUserDefaults] valueForKey:@"devswitch"];
-    NSString *prefix = [devswitch intValue] ? @"https://bwhst.brainhoney.com" : @"https://bwhs.brainhoney.com";
+    id domain = [[NSUserDefaults standardUserDefaults] valueForKey:@"domain"];
+    domain = domain == nil ? @"bwhs" : domain;
+    NSString *prefix = [NSString stringWithFormat:@"https://%@.brainhoney.com", domain];
+    
     return [[NSString stringWithFormat:@"%@/Editor/AssetHandler.ashx?entityid=%@&path=Assets/%@&mediatype=all&%@", prefix, entity, fname, cookie] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 }
 - (NSString *)entity {
@@ -25,8 +27,9 @@
     [self.delegate gotCookie:[parts firstObject]];
 }
 - (void)getCookieForUser: (NSString *)username withPass: (NSString *)password {
-    id devswitch = [[NSUserDefaults standardUserDefaults] valueForKey:@"devswitch"];
-    NSString *prefix = [devswitch intValue] ? @"https://bwhst.brainhoney.com" : @"https://bwhs.brainhoney.com";
+    id domain = [[NSUserDefaults standardUserDefaults] valueForKey:@"domain"];
+    domain = domain == nil ? @"bwhs" : domain;
+    NSString *prefix = [NSString stringWithFormat:@"https://%@.brainhoney.com", domain];
     NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/Controls/CredentialsUI.ashx", prefix]]];
     NSString *post = [NSString stringWithFormat:@"action=login&ReturnUrl=https%%3A%%2F%%2Fbwhst.brainhoney.com%%2FFrame%%2FComponent%%2FHome&standardOffset=300&daylightOffset=240&standardStartTime=2013-11-03T06%%3A00%%3A00Z&daylightStartTime=2013-03-10T07%%3A00%%3A00Z&username=%@&password=%@", username, password];
     [req setHTTPBody:[post dataUsingEncoding:NSStringEncodingConversionAllowLossy]];

@@ -12,13 +12,13 @@
 		</dict>
 		<dict>
 			<key>DefaultValue</key>
-			<false/>
+			<string>bwhs</string>
 			<key>Key</key>
-			<string>devswitch</string>
+			<string>domain</string>
 			<key>Title</key>
-			<string>Developer Mode</string>
+			<string>Brainhoney Domain</string>
 			<key>Type</key>
-			<string>PSToggleSwitchSpecifier</string>
+			<string>PSTextFieldSpecifier</string>
 		</dict>
 	</array>
 	<key>StringsTable</key>

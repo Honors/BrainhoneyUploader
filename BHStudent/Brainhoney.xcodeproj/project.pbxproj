@@ -235,6 +235,11 @@
 				CLASSPREFIX = BH;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = mattneary;
+				TargetAttributes = {
+					8161508617FB5388000897B9 = {
+						DevelopmentTeam = 2QNE754S2P;
+					};
+				};
 			};
 			buildConfigurationList = 8161508217FB5388000897B9 /* Build configuration list for PBXProject "Brainhoney" */;
 			compatibilityVersion = "Xcode 3.2";
