@@ -19,6 +19,15 @@ on the app from which the file is being exported.
 
 ![Export](Information/export.png)
 
+# Distribution
+
+The app is distributed through the iOS App Store for a fee. Schools can purchase
+in bulk for a discount, and coupon codes will be available for schools interested
+in trying a copy of the app before they buy.
+
+The app works for any Brainhoney domain name and thus can be used by high
+schools and colleges across the nation.
+
 # Implementation
 Within the `Information` folder are a couple shell scripts meant to illustrate
 the specifics of the uploading endpoint. The file `upload.sh` serves as a concise
